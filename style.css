@@ -1,0 +1,59 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:arial;
+}
+.dark{
+	background-color:rgba(0,0,0,0.9);
+	color:white;
+}
+.warnaWarni{
+	background-image:linear-gradient(to bottom right, red, blue, yellow, pink, green, purple);
+}
+.info{
+	position:absolute;
+	top:40px;
+	font-weight:bold;
+}
+.animasiGerak{
+	animation:gerakGerak 0.5s infinite;
+}
+@keyframes gerakGerak{
+	0%{font-size:30px};
+	50%{font-size:50px};
+	100%{font-size:30px};
+}
+#container{
+	height:100vh;
+	width:100%;
+	justify-content:center;
+	align-items:center;
+	display:flex;
+}
+#container h1{
+	color:coral;
+	text-shadow:-1px 0px black , 1px 0 black , 1px 2px black; 
+}
+nav{
+	position:fixed;
+	bottom:0;
+	background-color:rgba(30,40,255,0.6);
+	width:100%;
+	padding:10px;
+	box-shadow: 0 0 15px blue;
+}
+nav a{
+	color:white;
+	font-size:20px;
+	padding:15px;
+	text-decoration:none;
+	font-weight:bold;
+}
+nav a:hover{
+	background-color:rgba(30,40,255,0.9);
+	cursor:pointer;
+	transition: background-color .9s linear;
+}
